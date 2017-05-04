@@ -1,0 +1,8 @@
+#coding=utf-8
+import urllib
+import urllib.request
+full_url = "http://dl.stream.kg.qq.com/szkge/2ca01f570702f2d77324418acf44de0699242a68?ftnrkey=2557072529f4ed4707d82c21febd9b8f5e6a88c1c1a264bc7af8a310c4c49af81710d0a8cacea5fa56684046db2ba2f18220a7c6e7b732301920742ca1cb0963&vkey=BF252BC19D928271D1A78E4FCCD483F923A83EDA42EBF5F4C57BB9D12BDB437F167B21C7BDF92ADF7A644D8BE75F770AAB88ED5ADD48C704D4FDA2A799AE0739483075707E52B9C25607F43E2EA363B24B87BFA9AA14BD56&fname=1021_20ee68edc1c436ba547e47ef83f9fafc598111ad.48.m4a&fromtag=1507&sdtfrom=v1507"
+res=urllib.request.urlopen(full_url)
+fp = open('D:/music.m4a','wb')
+fp.write(res.read())
+fp.close()
